@@ -218,3 +218,61 @@ footer p {
     font-weight: bold;
 }
 
+/* Ensuring the page takes up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content container */
+.container {
+    flex: 1; /* This allows the container to take up the remaining space, pushing the footer down */
+}
+
+/* Sticky footer style */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #333; /* Adjust the color as per your design */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Quantity Selector Styles */
+
+
+.qty-btn {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+}
+
+.qty-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.qty-btn:active {
+    background-color: #555;
+}
+
+#product-quantity {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
